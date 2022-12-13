@@ -2,6 +2,7 @@ import express from 'express'
 import cors from 'cors'
 import dotenv from 'dotenv'
 import { ping } from './endpoints/ping'
+import { getAllEstudantes } from './endpoints/getAllEstudantes'
 
 dotenv.config()
 const app = express()
@@ -15,3 +16,5 @@ app.listen(process.env.PORT || 3003, () => {
 
 //teste
 app.get("/ping", ping)
+
+app.get("/all/estudantes", getAllEstudantes)
