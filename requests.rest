@@ -4,3 +4,7 @@ GET http://localhost:3003/ping
 ###
 
 GET http://localhost:3003/all/estudantes
+
+###
+
+GET http://localhost:3003/all/turmas
