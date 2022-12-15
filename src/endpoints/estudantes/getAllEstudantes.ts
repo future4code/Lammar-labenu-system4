@@ -1,4 +1,4 @@
-import { EstudantesDatabase } from "./../database/EstudantesDatabase";
+import { EstudantesDatabase } from "../../database/EstudantesDatabase";
 import { Request, Response } from "express";
 
 export const getAllEstudantes = async (req: Request, res: Response) => {

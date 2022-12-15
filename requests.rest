@@ -1,8 +1,20 @@
 ### Endpoint de teste
 GET http://localhost:3003/ping
 
-###
-GET http://localhost:3003/all/estudantes
+### Buscar todos os Estudantes
+GET http://localhost:3003/all/estudante
+
+### Criar Estudante 
+POST http://localhost:3003/criar/estudante
+Content-Type: application/json
+
+{
+"nome": "novoEstudante", 
+"email": "novoestudante@gmail.com", 
+"data_nasc": "1980-04-02", 
+"turma_id": "001",
+"hobby": "Dormir"
+}
 
 ###
 GET http://localhost:3003/all/turmas
