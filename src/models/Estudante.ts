@@ -3,7 +3,7 @@ export type EstudanteDB = {
   nome: string;
   email: string;
   data_nasc: Date;
-  turma_id: number;
+  // turma_id: number;
   hobby: string[];
 };
 
