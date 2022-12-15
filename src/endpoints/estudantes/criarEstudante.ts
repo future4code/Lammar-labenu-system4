@@ -7,7 +7,7 @@ export default async function criarEstudante(req: Request, res: Response) {
   try {
     const { nome, email, data_nasc, turma_id, hobby } = req.body;
 
-    if (
+    /*   if (
       nome === "" ||
       email === "" ||
       data_nasc === "" ||
@@ -24,7 +24,7 @@ export default async function criarEstudante(req: Request, res: Response) {
     if (!email.includes("@")) {
       throw new Error("Email inválido");
     }
-
+ */
     const estudante = new Estudante(
       Date.now().toString(),
       nome,

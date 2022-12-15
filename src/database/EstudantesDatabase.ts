@@ -13,7 +13,7 @@ export class EstudantesDatabase extends BaseDatabase {
         nome: estudante.getNome(),
         email: estudante.getEmail(),
         data_nasc: estudante.getDataNasc(),
-        hobby: estudante.getHobby(),
+        turma_id: estudante.getTurmaId(),
       });
     } catch (error: any) {
       throw new Error("Erro inesperado");

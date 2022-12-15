@@ -23,8 +23,8 @@ app.listen(process.env.PORT || 3003, () => {
 app.get("/ping", ping);
 
 //Estudante
-// app.get("/all/estudante", getAllEstudantes);
-app.get("/criar/estudante", criarEstudante);
+app.get("/all/estudante", getAllEstudantes);
+app.post("/criar/estudante", criarEstudante);
 
 //Turma
 app.get("/all/turmas", getAllTurmas);
