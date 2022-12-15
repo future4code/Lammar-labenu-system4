@@ -2,9 +2,31 @@
 GET http://localhost:3003/ping
 
 ###
-
 GET http://localhost:3003/all/estudantes
 
 ###
-
 GET http://localhost:3003/all/turmas
+
+### Buscar todos os Docentes 
+GET http://localhost:3003/all/docentes
+
+### Criar Docente 
+POST http://localhost:3003/criar/docente 
+Content-Type: application/json
+
+{
+"nome": "teste", 
+"email": "teste3@gmail.com", 
+"data_nasc": "1995-02-10", 
+"turma_id": "001"
+}
+
+// Mudar docente de turma 
+### 
+PUT http://localhost:3003/docentes
+Content-Type: application/json
+
+{
+"id" : "1671118031003",
+"turma_id" : "002"
+}
