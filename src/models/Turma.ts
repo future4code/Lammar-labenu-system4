@@ -1,14 +1,14 @@
 export type TurmaDB = {
     id: string; 
     nome: string;
-    modulo: string[]
+    modulo: number
 }
 
 export class Turma {
     constructor(
         private id: string, 
         private nome: string, 
-        private modulo: string[],
+        private modulo: number,
     ) {}
     public getId(): string {
         return this.id;
@@ -16,7 +16,7 @@ export class Turma {
     public getNome(): string {
         return this.nome;
     }
-    public getModulo(): string[] {
+    public getModulo(): number {
         return this.modulo;
     }
 }

@@ -1,4 +1,4 @@
-import { TurmaDatabase } from "../database/TurmaDatabase";
+import { TurmaDatabase } from "../../database/TurmaDatabase";
 import { Request, Response } from "express";
 
 
@@ -7,6 +7,7 @@ export const getAllTurmas = async (req: Request, res: Response) => {
   try {
     const turmaDatabase = new TurmaDatabase();
     const result = await turmaDatabase.getAllTurmas();
+    
 
     res.status(200).send({ turmas: result });
   } catch (error) {

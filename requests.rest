@@ -1,6 +1,33 @@
 ### Endpoint de teste
 GET http://localhost:3003/ping
 
+
+//--------------------  Endpoints Turmas
+
+### Buscar turmas 
+GET http://localhost:3003/all/turmas
+
+### Criar Turma
+POST http://localhost:3003/criar/turma
+Content-Type: application/json
+
+{
+
+"nome": "teste", 
+"modulo": 5
+}
+
+### Mudar Módulo da Turma
+PUT http://localhost:3003/turmas
+Content-Type: application/json
+
+{
+"id" : "1671202148443",
+"modulo": 4
+}
+
+//-------------------- Endpoints Estudantes
+
 ### Buscar todos os Estudantes
 GET http://localhost:3003/all/estudante
 
@@ -16,8 +43,7 @@ Content-Type: application/json
 "hobby": "Dormir"
 }
 
-###
-GET http://localhost:3003/all/turmas
+//-------------------- Endpoints Docentes
 
 ### Buscar todos os Docentes 
 GET http://localhost:3003/all/docentes

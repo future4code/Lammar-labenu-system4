@@ -3,11 +3,13 @@ import cors from "cors";
 import dotenv from "dotenv";
 import { ping } from "./endpoints/ping";
 import { getAllEstudantes } from "./endpoints/estudantes/getAllEstudantes";
-import { getAllTurmas } from "./endpoints/getAllTurmas";
+import { getAllTurmas } from "./endpoints/turmas/getAllTurmas";
 import getAllDocentes from "./endpoints/docentes/getAllDocentes";
 import criarDocente from "./endpoints/docentes/criarDocente";
 import atualizarDocenteTurma from "./endpoints/docentes/atualizarDocenteTurma";
 import criarEstudante from "./endpoints/estudantes/criarEstudante";
+import criarTurma from "./endpoints/turmas/criarTurma";
+import atualizarTurmaModulo from "./endpoints/turmas/atualizarTurmaModulo";
 
 dotenv.config();
 const app = express();
@@ -28,6 +30,8 @@ app.get("/criar/estudante", criarEstudante);
 
 //Turma
 app.get("/all/turmas", getAllTurmas);
+app.post("/criar/turma", criarTurma);
+app.put("/turmas", atualizarTurmaModulo); 
 
 //Docente
 app.get("/all/docentes", getAllDocentes);
