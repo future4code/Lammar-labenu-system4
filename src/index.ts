@@ -29,7 +29,7 @@ app.get("/ping", ping);
 //Estudante
 app.get("/estudante", getNomeEstudante);
 app.get("/all/estudante", getAllEstudantes);
-app.get("/criar/estudante", criarEstudante);
+app.post("/criar/estudante", criarEstudante);
 app.put("/estudante", mudarEstudanteTurma);
 
 //Turma
