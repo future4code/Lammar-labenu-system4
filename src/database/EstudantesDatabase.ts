@@ -27,4 +27,24 @@ export class EstudantesDatabase extends BaseDatabase {
       throw new Error("Erro inesperado");
     }
   }
+
+  public async getNomeEstudante(nome: string) {
+    try {
+      return await BaseDatabase.connection("Estudante")
+        .select()
+        .where("nome", "like", `%${nome}`);
+    } catch (error: any) {
+      throw new Error("Erro inesperado");
+    }
+  }
+
+  public async mudarEstudanteTurma(turma_id: string, id: string) {
+    try {
+      await BaseDatabase.connection("Estudante")
+        .update({ turma_id: turma_id })
+        .where({ id: id });
+    } catch (error: any) {
+      throw new Error("Erro inesperado");
+    }
+  }
 }
