@@ -23,17 +23,17 @@ Representa docentes da nossa instituição. Eles devem possuir: id, nome, email,
 
 - As funcionalidades básicas são: 
 
-→ Criar turma;
-→ Buscar turmas ativas;
-→ Mudar turma de módulo
+→ Criar turma; </br>
+→ Buscar turmas ativas; </br>
+→ Mudar turma de módulo </br>
 
-→ Criar estudante;
-→ Buscar estudantes através do nome;
-→ Mudar estudante de turma;
+→ Criar estudante; </br>
+→ Buscar estudantes através do nome; </br>
+→ Mudar estudante de turma; </br>
 
-→ Criar docente;
-→ Buscar todas as pessoas docentes;
-→ Mudar docente de turma;
+→ Criar docente; </br>
+→ Buscar todas as pessoas docentes; </br>
+→ Mudar docente de turma; </br>
 
 <h2>
     <br>
