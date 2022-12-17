@@ -40,11 +40,10 @@ POST http://localhost:3003/criar/estudante
 Content-Type: application/json
 
 {
-"nome": "Patrick", 
-"email": "patrick@gmail.com", 
-"data_nasc": "2000-07-01", 
-"turma_id": "001",
-
+"nome": "Patrick07", 
+"email": "patrick07@gmail.com", 
+"data_nasc": "1994-07-10", 
+"turma_id": "001"
 }
 
 // Mudar Estudante de turma 

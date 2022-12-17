@@ -7,17 +7,11 @@ export default async function criarEstudante(req: Request, res: Response) {
   try {
     const { nome, email, data_nasc, turma_id, hobby } = req.body;
 
-    if (
-      nome === "" ||
-      email === "" ||
-      data_nasc === "" ||
-      turma_id === "" ||
-      hobby === ""
-    ) {
+    if (nome === "" || email === "" || data_nasc === "" || turma_id === "") {
       throw new Error("Algum campo está vazio");
     }
 
-    if (!nome || !email || !data_nasc || !turma_id || !hobby) {
+    if (!nome || !email || !data_nasc || !turma_id) {
       throw new Error("Dados inválidos");
     }
 
@@ -30,8 +24,7 @@ export default async function criarEstudante(req: Request, res: Response) {
       nome,
       email,
       data_nasc,
-      turma_id,
-      hobby
+      turma_id
     );
 
     const estudanteDB = new EstudantesDatabase();

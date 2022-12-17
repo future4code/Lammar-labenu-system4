@@ -5,9 +5,7 @@ export class EstudantesDatabase extends BaseDatabase {
   TABLE_NAME: string = "Estudante";
 
   public async adicionarEstudante(estudante: Estudante) {
-    await super.create(estudante).insert({
-      hobby: estudante.getHobby()
-  });
+    await super.create(estudante);
   }
 
   public async getAll() {
