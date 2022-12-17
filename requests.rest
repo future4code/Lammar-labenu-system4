@@ -45,7 +45,7 @@ Content-Type: application/json
 "data_nasc": "1994-07-10", 
 "turma_id": "001"
 }
-//teste
+
 // Mudar Estudante de turma 
 ### 
 PUT http://localhost:3003/estudante
