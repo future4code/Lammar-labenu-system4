@@ -2,30 +2,16 @@ import { Estudante } from "../models/Estudante";
 import { BaseDatabase } from "./BaseDatabase";
 
 export class EstudantesDatabase extends BaseDatabase {
-  static getAllEstudantes() {
-    throw new Error("Method not implemented.");
-  }
+  TABLE_NAME: string = "Estudante";
 
   public async adicionarEstudante(estudante: Estudante) {
-    try {
-      await BaseDatabase.connection("Estudante").insert({
-        id: estudante.getId(),
-        nome: estudante.getNome(),
-        email: estudante.getEmail(),
-        data_nasc: estudante.getDataNasc(),
-        turma_id: estudante.getTurmaId(),
-      });
-    } catch (error: any) {
-      throw new Error("Erro inesperado");
-    }
+    await super.create(estudante).insert({
+      hobby: estudante.getHobby()
+  });
   }
 
-  public async getAllEstudantes() {
-    try {
-      return await BaseDatabase.connection("Estudante").select();
-    } catch (error: any) {
-      throw new Error("Erro inesperado");
-    }
+  public async getAll() {
+    return super.getAll();
   }
 
   public async getNomeEstudante(nome: string) {

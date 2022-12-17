@@ -5,7 +5,7 @@ export const getAllEstudantes = async (req: Request, res: Response) => {
   let errorCode = 400;
   try {
     const estudanteDataBase = new EstudantesDatabase();
-    const result = await estudanteDataBase.getAllEstudantes();
+    const result = await estudanteDataBase.getAll();
 
     res.status(200).send({ estudantes: result });
   } catch (error) {
