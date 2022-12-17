@@ -13,8 +13,8 @@ Content-Type: application/json
 
 {
 
-"nome": "teste", 
-"modulo": 5
+"nome": "teste1", 
+"modulo": 1
 }
 
 ### Mudar Módulo da Turma
@@ -40,11 +40,11 @@ POST http://localhost:3003/criar/estudante
 Content-Type: application/json
 
 {
-"nome": "Bob Esponja", 
-"email": "bobesponja@gmail.com", 
-"data_nasc": "1999-05-01", 
+"nome": "Patrick", 
+"email": "patrick@gmail.com", 
+"data_nasc": "2000-07-01", 
 "turma_id": "001",
-"hobby": "comer"
+
 }
 
 // Mudar Estudante de turma 
@@ -67,9 +67,9 @@ POST http://localhost:3003/criar/docente
 Content-Type: application/json
 
 {
-"nome": "teste", 
-"email": "teste3@gmail.com", 
-"data_nasc": "1995-02-10", 
+"nome": "teste3", 
+"email": "teste5@gmail.com", 
+"data_nasc": "1999-02-10", 
 "turma_id": "001"
 }
 

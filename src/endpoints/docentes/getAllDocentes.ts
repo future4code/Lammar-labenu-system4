@@ -5,7 +5,7 @@ export default async function getDocentes(req: Request, res: Response): Promise<
     try {
 
         const docenteDB = new DocenteDatabase()
-        const docentes = await docenteDB.getAllDocentes()
+        const docentes = await docenteDB.getAll()
         
         res.status(200).send(docentes)
     } catch (error: any) {

@@ -6,7 +6,7 @@ export const getAllTurmas = async (req: Request, res: Response) => {
   let errorCode = 400;
   try {
     const turmaDatabase = new TurmaDatabase();
-    const result = await turmaDatabase.getAllTurmas();
+    const result = await turmaDatabase.getAll();
     
 
     res.status(200).send({ turmas: result });
