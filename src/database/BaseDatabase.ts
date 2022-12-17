@@ -27,5 +27,4 @@ export abstract class BaseDatabase {
   public async create(item: any) {
     await BaseDatabase.connection(this.TABLE_NAME).insert(item);
   }
-  //teste
 }
