@@ -28,6 +28,10 @@ Content-Type: application/json
 
 //-------------------- Endpoints Estudantes
 
+### Buscar por nome o Estudante
+GET http://localhost:3003/estudante?nome=santiago
+
+
 ### Buscar todos os Estudantes
 GET http://localhost:3003/all/estudante
 
@@ -36,11 +40,21 @@ POST http://localhost:3003/criar/estudante
 Content-Type: application/json
 
 {
-"nome": "novoEstudante", 
-"email": "novoestudante@gmail.com", 
-"data_nasc": "1980-04-02", 
+"nome": "Bob Esponja", 
+"email": "bobesponja@gmail.com", 
+"data_nasc": "1999-05-01", 
 "turma_id": "001",
-"hobby": "Dormir"
+"hobby": "comer"
+}
+
+// Mudar Estudante de turma 
+### 
+PUT http://localhost:3003/estudante
+Content-Type: application/json
+
+{
+"id" : "001",
+"turma_id" : "001"
 }
 
 //-------------------- Endpoints Docentes
