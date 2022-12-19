@@ -5,8 +5,8 @@ export type EstudanteDB = {
   nome: string;
   email: string;
   data_nasc: string;
-  turma_id?: string | null;
-  hobby_id?: string | null;
+  turma_id: string
+  hobby_id?: string
 }
 
 export class Estudante extends Usuario {

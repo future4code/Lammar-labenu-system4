@@ -5,8 +5,8 @@ export type DocenteDB = {
    nome: string;
    email: string;
    data_nasc: string;
-   turma_id?: string | null;
-   especialidade_id?: string;
+   turma_id: string;
+   especialidade?: string[];
  }
  
  export class Docente extends Usuario{
