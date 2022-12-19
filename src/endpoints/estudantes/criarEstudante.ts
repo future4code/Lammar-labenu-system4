@@ -35,7 +35,7 @@ export default async function criarEstudante(req: Request, res: Response) {
     );
 
     const estudanteDB = new EstudantesDatabase();
-    await estudanteDB.adicionarEstudante(estudante);
+    await estudanteDB.adicionar(estudante);
 
     res.status(201).send({ message: "Estudante criado", estudante });
   } catch (error: any) {

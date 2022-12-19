@@ -32,7 +32,7 @@ export default async function criarDocente(req: Request, res: Response) {
     );
 
     const docenteDB = new DocenteDatabase();
-    await docenteDB.adicionarDocente(docente);
+    await docenteDB.adicionar(docente);
 
     res.status(201).send({
       message: "Professor criado com sucesso!",

@@ -1,7 +1,7 @@
 export type TurmaDB = {
     id: string; 
     nome: string;
-    modulo: number
+    modulo: String;
 }
 
 export class Turma {

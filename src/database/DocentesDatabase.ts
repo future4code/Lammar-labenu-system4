@@ -4,7 +4,7 @@ import { BaseDatabase } from "./BaseDatabase";
 export class DocenteDatabase extends BaseDatabase {
   TABLE_NAME: string = "Docente";
 
-  public async adicionarDocente(docente: Docente) {
+  public async adicionar(docente: Docente) {
     await super.create(docente) 
   }
 

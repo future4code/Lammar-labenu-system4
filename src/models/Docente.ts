@@ -1,8 +1,8 @@
-export type DovcenteDB = {
+export type DocenteDB = {
     id: string,
     nome: string,
     email: string,
-    data_nasc: Date,
+    data_nasc: String,
     turma_id: number
  }
  

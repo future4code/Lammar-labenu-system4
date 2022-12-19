@@ -4,10 +4,8 @@ import { BaseDatabase } from "./BaseDatabase";
 export class EstudantesDatabase extends BaseDatabase {
   TABLE_NAME: string = "Estudante";
 
-  public async adicionarEstudante(estudante: Estudante) {
-    await super.create(estudante).insert({
-      hobby: estudante.getHobby()
-  });
+  public async adicionar(estudante: Estudante) {
+    await super.create(estudante);
   }
 
   public async getAll() {

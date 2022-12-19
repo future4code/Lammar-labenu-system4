@@ -4,7 +4,7 @@ import { BaseDatabase } from "./BaseDatabase";
 export class TurmaDatabase extends BaseDatabase {
   TABLE_NAME: string = "Turma";
 
-  public async adicionarTurma(turma: Turma) {
+  public async adicionar(turma: Turma) {
     await super.create(turma);
   }
 
