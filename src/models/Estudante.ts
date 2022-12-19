@@ -3,7 +3,7 @@ export type EstudanteDB = {
   nome: string;
   email: string;
   data_nasc: String;
-  turma_id: number;
+  turma_id: String;
 };
 
 export class Estudante {

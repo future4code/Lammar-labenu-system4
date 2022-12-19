@@ -3,7 +3,7 @@ export type DocenteDB = {
     nome: string,
     email: string,
     data_nasc: String,
-    turma_id: number
+    turma_id?: String | null,
  }
  
  export class Docente {
@@ -12,7 +12,7 @@ export type DocenteDB = {
      private nome: string,
      private email: string,
      private data_nasc: Date,
-     private turma_id: number
+     private turma_id?: String | null,
     ){}
  
     public getId() {

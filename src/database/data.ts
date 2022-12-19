@@ -3,8 +3,10 @@ import { EstudanteDB } from '../models/Estudante';
 import { DocenteDB } from '../models/Docente';
 import { EspecialidadeDB } from '../models/Especialidade';
 import { HobbyDB } from '../models/Hobby';
+import { EstudanteHobbyDB } from '../models/EstudanteHobby';
+import { DocenteEspecialidadeDB } from '../models/DocenteEspecialidade';
 
-export const turma: TurmaDB[] = [
+export const turma = [
     {
         id: "001",
         nome: "Turma-lamarr",
@@ -20,17 +22,24 @@ export const turma: TurmaDB[] = [
 export const estudante: EstudanteDB[] = [
     {
         id: "001",
-        nome: "Estudante 1",
-        email: "estudante@gmail.com",
-        data_nasc: "02-10-2000",
-        turma_id: 1,
+        nome: "Santiago",
+        email: "santiago@gmail.com",
+        data_nasc: "02-10-1998",
+        turma_id: "001",
     },
     {
         id: "002",
-        nome: "Estudante 2",
-        email: "estudante2@gmail.com",
-        data_nasc: "02-10-2000",
-        turma_id: 2,
+        nome: "Gabriel",
+        email: "gabriel@gmail.com",
+        data_nasc: "08-10-1996",
+        turma_id: "001",
+    },
+    {
+        id: "003",
+        nome: "Julia",
+        email: "julia@gmail.com",
+        data_nasc: "09-10-1997",
+        turma_id: "001",
     }
 ];
 
@@ -42,10 +51,14 @@ export const hobby: HobbyDB[] = [
     {
         id: "002",
         nome: "comer"
+    },
+    {
+        id: "003",
+        nome: "viajar"
     }
 ];
 
-export const estudante_hobby = [
+export const estudante_hobby: EstudanteHobbyDB[] = [
     {
         id: "001",
         estudante_id: "001",
@@ -55,6 +68,11 @@ export const estudante_hobby = [
         id: "002",
         estudante_id: "002",
         hobby_id: "002"
+    },
+    {
+        id: "003",
+        estudante_id: "003",
+        hobby_id: "003"
     }
 ];
 
@@ -63,15 +81,15 @@ export const docente: DocenteDB[] = [
         id: "001",
         nome: "fayra",
         email: "fayra@gmail.com",
-        data_nasc: "20-10-1998",
-        turma_id: 1
+        data_nasc: "1998-10-02",
+        turma_id: "001"
     },
     {
         id: "002",
         nome: "junior",
         email: "junior@gmail.com",
-        data_nasc: "20-10-1998",
-        turma_id: 2
+        data_nasc: "1996-10-02",
+        turma_id: "001"
     }
 ];
 
@@ -86,7 +104,7 @@ export const especialidade: EspecialidadeDB[] = [
     }
 ];
 
-export const docente_especialidade = [
+export const docente_especialidade: DocenteEspecialidadeDB[] = [
     {
         id: "001",
         docente_id: "001",
