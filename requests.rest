@@ -1,14 +1,14 @@
 ### Endpoint de teste
-GET http://localhost:3003/ping
+GET https://labenu-system4.onrender.com/ping
 
 
 //--------------------  Endpoints Turmas
 
 ### Buscar turmas 
-GET http://localhost:3003/all/turmas
+GET https://labenu-system4.onrender.com/all/turmas
 
 ### Criar Turma
-POST http://localhost:3003/criar/turma
+POST https://labenu-system4.onrender.com/criar/turma
 Content-Type: application/json
 
 {
@@ -18,7 +18,7 @@ Content-Type: application/json
 }
 
 ### Mudar Módulo da Turma
-PUT http://localhost:3003/turmas
+PUT https://labenu-system4.onrender.com/turmas
 Content-Type: application/json
 
 {
@@ -29,14 +29,14 @@ Content-Type: application/json
 //-------------------- Endpoints Estudantes
 
 ### Buscar por nome o Estudante
-GET http://localhost:3003/estudante?nome=santiago
+GET https://labenu-system4.onrender.com/estudante?nome=santiago
 
 
 ### Buscar todos os Estudantes
-GET http://localhost:3003/all/estudante
+GET https://labenu-system4.onrender.com/all/estudante
 
 ### Criar Estudante 
-POST http://localhost:3003/criar/estudante
+POST https://labenu-system4.onrender.com/criar/estudante
 Content-Type: application/json
 
 {
@@ -47,7 +47,7 @@ Content-Type: application/json
 }
 
 ### Mudar Estudante de turma  
-PUT http://localhost:3003/estudante
+PUT https://labenu-system4.onrender.com/estudante
 Content-Type: application/json
 
 {
@@ -58,10 +58,10 @@ Content-Type: application/json
 //-------------------- Endpoints Docentes
 
 ### Buscar todos os Docentes 
-GET http://localhost:3003/all/docentes
+GET https://labenu-system4.onrender.com/all/docentes
 
 ### Criar Docente 
-POST http://localhost:3003/criar/docente 
+POST https://labenu-system4.onrender.com/criar/docente 
 Content-Type: application/json
 
 {
@@ -71,7 +71,7 @@ Content-Type: application/json
 }
 
 ### Mudar docente de turma 
-PUT http://localhost:3003/docentes
+PUT https://labenu-system4.onrender.com/docentes
 Content-Type: application/json
 
 {
