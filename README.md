@@ -10,18 +10,17 @@ O projeto consiste em criarmos um sistema que represente o básico da organizaç
 
 **Turma**
 
-Toda turma é composta das seguintes características: id, nome e módulo. O módulo pode assumir os valores de 0 a 6, sendo 0 as turmas que estão inativas. 
-
+Toda turma é composta das seguintes características: id, nome e módulo. O módulo pode assumir os valores de 0 a 6, sendo 0 as turmas que estão inativas.
 
 **Estudantes**
 
-Representa estudantes da nossa instituição. Eles devem possuir: id, nome, email, data de nascimento, turma id e  seus principais hobbies. 
+Representa estudantes da nossa instituição. Eles devem possuir: id, nome, email, data de nascimento, turma id e seus principais hobbies.
 
 **Docente**
 
 Representa docentes da nossa instituição. Eles devem possuir: id, nome, email, data de nascimento, turma id e todas as especialidades dele. Há 5 especialidades: JS, CSS, React, Typescript, Programação Orientada a Objetos.
 
-- As funcionalidades básicas são: 
+- As funcionalidades básicas são:
 
 → Criar turma; </br>
 → Buscar turmas ativas; </br>
@@ -38,13 +37,14 @@ Representa docentes da nossa instituição. Eles devem possuir: id, nome, email,
 <h2>
     <br>
     <p style="color: #D30404; font-weight: bold;">🔗 Link do Deploy</p>
+    <a href="https://labenu-system4.onrender.com" alt="link deploy"></a> 
 </h2>
 
 <h2>
     <br>
     <p style="color: #D30404; font-weight: bold;">🔗 Link da Documentação</p>
+    <a href="https://documenter.getpostman.com/view/22349865/2s8YzZRL55" alt="link deploy"></a> 
 </h2>
-
 
 <h2>
     <br>
