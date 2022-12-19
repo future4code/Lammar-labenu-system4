@@ -5,7 +5,7 @@ export class TurmaDatabase extends BaseDatabase {
   TABLE_NAME: string = "Turma";
 
   public async adicionar(turma: Turma) {
-    await super.create(turma);
+    return await super.create(turma);
   }
 
   public async getAll() {

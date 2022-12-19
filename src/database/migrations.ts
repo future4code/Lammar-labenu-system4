@@ -17,7 +17,7 @@ const createTables = async () => {
             id VARCHAR(255) PRIMARY KEY,
             nome VARCHAR(255) NOT NULL,
             email VARCHAR(255) UNIQUE NOT NULL,
-            data_nasc STR_TO_DATE( '%d/%m/%Y', data_nasc ) NOT NULL,
+            data_nasc DATE NOT NULL,
             turma_id VARCHAR(255) NOT NULL,
             FOREIGN KEY (turma_id) REFERENCES ${TABLE_TURMA}(id)
         );

@@ -65,8 +65,8 @@ POST http://localhost:3003/criar/docente
 Content-Type: application/json
 
 {
-"nome": "teste4", 
-"email": "tetmlllpllp@gmail.com", 
+"nome": "teste", 
+"email": "teste@gmail.com", 
 "data_nasc": "1999-02-10"
 }
 

@@ -20,11 +20,16 @@ export abstract class BaseDatabase {
 
   public async getAll() {
     const result = await BaseDatabase.connection(this.TABLE_NAME).select();
-
     return result;
   }
 
   public async create(item: any) {
-    await BaseDatabase.connection(this.TABLE_NAME).insert(item);
+    const result = await BaseDatabase.connection(this.TABLE_NAME).insert(item);
+    return result;
+  }
+
+  public async mudar(turma_id: string, id: string) {  
+    const result = await BaseDatabase.connection(this.TABLE_NAME).update({turma_id}).where({id})
+    return result
   }
 }

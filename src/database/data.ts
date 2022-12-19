@@ -6,7 +6,7 @@ import { HobbyDB } from '../models/Hobby';
 import { EstudanteHobbyDB } from '../models/EstudanteHobby';
 import { DocenteEspecialidadeDB } from '../models/DocenteEspecialidade';
 
-export const turma = [
+export const turma: TurmaDB[] = [
     {
         id: "001",
         nome: "Turma-lamarr",
@@ -24,21 +24,21 @@ export const estudante: EstudanteDB[] = [
         id: "001",
         nome: "Santiago",
         email: "santiago@gmail.com",
-        data_nasc: "02-10-1998",
+        data_nasc: "1998-09-08",
         turma_id: "001",
     },
     {
         id: "002",
         nome: "Gabriel",
         email: "gabriel@gmail.com",
-        data_nasc: "08-10-1996",
+        data_nasc: "1996-05-10",
         turma_id: "001",
     },
     {
         id: "003",
         nome: "Julia",
         email: "julia@gmail.com",
-        data_nasc: "09-10-1997",
+        data_nasc: "1998-02-04",
         turma_id: "001",
     }
 ];
@@ -81,7 +81,7 @@ export const docente: DocenteDB[] = [
         id: "001",
         nome: "fayra",
         email: "fayra@gmail.com",
-        data_nasc: "1998-10-02",
+        data_nasc: "1998-09-08",
         turma_id: "001"
     },
     {

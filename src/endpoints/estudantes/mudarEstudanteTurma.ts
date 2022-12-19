@@ -17,7 +17,7 @@ export default async function mudarEstudanteTurma(
     }
 
     const docenteDB = new EstudantesDatabase();
-    await docenteDB.mudarEstudanteTurma(turma_id, id);
+    await docenteDB.mudar(turma_id, id);
 
     res.status(200).end("Atualizado!");
   } catch (error: any) {

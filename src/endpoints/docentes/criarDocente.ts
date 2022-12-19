@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { Docente } from "../../models/Docente";
-import { DocenteDatabase } from "../../database/DocentesDatabase";
+import { DocentesDatabase } from "../../database/DocentesDatabase";
 
 export default async function criarDocente(req: Request, res: Response) {
   let errorCode = 400;
@@ -30,7 +30,7 @@ export default async function criarDocente(req: Request, res: Response) {
       data_nasc
     );
 
-    const docenteDB = new DocenteDatabase();
+    const docenteDB = new DocentesDatabase();
     await docenteDB.adicionar(docente);
 
     res.status(201).send({
