@@ -36,14 +36,15 @@ Representa docentes da nossa instituição. Eles devem possuir: id, nome, email,
 
 <h2>
     <br>
-    <p style="color: #D30404; font-weight: bold;">🔗 Link do Deploy</p>
-    <a href="https://labenu-system4.onrender.com" alt="link deploy"></a> 
+    <p style="color: #D30404; font-weight: bold;">🔗 Link do Deploy</p> 
+    https://labenu-system4.onrender.com
 </h2>
 
 <h2>
     <br>
     <p style="color: #D30404; font-weight: bold;">🔗 Link da Documentação</p>
-    <a href="https://documenter.getpostman.com/view/22349865/2s8YzZRL55" alt="link deploy"></a> 
+    https://documenter.getpostman.com/view/22349865/2s8YzZRL55
+
 </h2>
 
 <h2>
