@@ -1,17 +1,17 @@
 import { Request, Response } from "express";
 import { Docente } from "../../models/Docente";
-import { DocenteDatabase } from "../../database/DocentesDatabase";
+import { DocentesDatabase } from "../../database/DocentesDatabase";
 
 export default async function criarDocente(req: Request, res: Response) {
   let errorCode = 400;
     try {
-    const { nome, email, data_nasc, turma_id } = req.body;
+    const { nome, email, data_nasc } = req.body;
 
-    if(nome === "" || email === "" || data_nasc === "" || turma_id === "") {
+    if(nome === "" || email === "" || data_nasc === "") {
         throw new Error("Algum campo está vazio");
     }
 
-    if(!nome || !email || !data_nasc || !turma_id) {
+    if(!nome || !email || !data_nasc) {
         throw new Error("Dados inválidos");
     }
 
@@ -27,11 +27,10 @@ export default async function criarDocente(req: Request, res: Response) {
       Date.now().toString(),
       nome,
       email,
-      data_nasc,
-      turma_id
+      data_nasc
     );
 
-    const docenteDB = new DocenteDatabase();
+    const docenteDB = new DocentesDatabase();
     await docenteDB.adicionar(docente);
 
     res.status(201).send({

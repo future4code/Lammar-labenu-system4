@@ -1,9 +1,10 @@
-export type HobbyDB = {
+export type EstudanteHobbyDB = {
     id: string;
-    nome: string;
+    estudante_id: string;
+    hobby_id: string;
 }
 
-export class Hobby {
+export class EstudanteHobby {
     constructor(
         private id: string,
         private nome: string,

@@ -1,5 +1,5 @@
 import { Request, Response } from 'express'
-import { DocenteDatabase } from '../../database/DocentesDatabase'
+import { DocentesDatabase } from '../../database/DocentesDatabase'
 
 export default async function atualizarDocenteTurma(req: Request, res: Response): Promise<void> {
     try {
@@ -14,8 +14,8 @@ export default async function atualizarDocenteTurma(req: Request, res: Response)
             throw new Error("Dados inválidos")
         }
 
-        const docenteDB = new DocenteDatabase()
-        await docenteDB.mudarDocenteTurma(turma_id, id)
+        const docenteDB = new DocentesDatabase()
+        await docenteDB.mudar(turma_id, id)
 
         res.status(200).end("Atualizado!")
     } catch (error: any) {

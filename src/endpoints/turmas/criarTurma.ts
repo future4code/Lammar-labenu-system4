@@ -27,7 +27,7 @@ export default async function criarTurma(req: Request, res: Response) {
           );
 
         const turmaDB = new TurmaDatabase();
-        await turmaDB.adicionarTurma(turma);
+        await turmaDB.adicionar(turma);
 
         res.status(201).send({
             message: "Turma criada com sucesso!",

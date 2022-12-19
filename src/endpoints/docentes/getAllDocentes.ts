@@ -1,10 +1,10 @@
 import { Request, Response } from 'express'
-import { DocenteDatabase } from '../../database/DocentesDatabase'
+import { DocentesDatabase } from '../../database/DocentesDatabase'
 
 export default async function getDocentes(req: Request, res: Response): Promise<void> {
     try {
 
-        const docenteDB = new DocenteDatabase()
+        const docenteDB = new DocentesDatabase()
         const docentes = await docenteDB.getAll()
         
         res.status(200).send(docentes)

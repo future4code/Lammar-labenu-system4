@@ -3,12 +3,17 @@ import { BaseDatabase } from "./BaseDatabase";
 
 export class EstudantesDatabase extends BaseDatabase {
   TABLE_NAME: string = "Estudante";
+  
   public async adicionar(estudante: Estudante) {
-    await super.create(estudante);
+    return await super.create(estudante);
   }
 
   public async getAll() {
     return super.getAll();
+  }
+
+  public async mudar(turma_id: string, id: string) {
+    return await super.mudar(turma_id, id)
   }
 
   public async getNomeEstudante(nome: string) {
@@ -16,16 +21,6 @@ export class EstudantesDatabase extends BaseDatabase {
       return await BaseDatabase.connection("Estudante")
         .select()
         .where("nome", "like", `%${nome}`);
-    } catch (error: any) {
-      throw new Error("Erro inesperado");
-    }
-  }
-
-  public async mudarEstudanteTurma(turma_id: string, id: string) {
-    try {
-      await BaseDatabase.connection("Estudante")
-        .update({ turma_id: turma_id })
-        .where({ id: id });
     } catch (error: any) {
       throw new Error("Erro inesperado");
     }
