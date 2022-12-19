@@ -12,8 +12,7 @@ export class Estudante {
     private nome: string,
     private email: string,
     private data_nasc: Date,
-    private turma_id: number,
-    private hobby: string[]
+    private turma_id: number
   ) {}
   public getId(): string {
     return this.id;
@@ -30,7 +29,7 @@ export class Estudante {
   public getTurmaId(): number {
     return this.turma_id;
   }
-  public getHobby(): string[] {
+  /*   public getHobby(): string[] {
     return this.hobby;
-  }
+  } */
 }
