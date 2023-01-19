@@ -1,0 +1,80 @@
+### Endpoint de teste
+GET https://labenu-system4.onrender.com/ping
+
+
+//--------------------  Endpoints Turmas
+
+### Buscar turmas 
+GET https://labenu-system4.onrender.com/all/turmas
+
+### Criar Turma
+POST https://labenu-system4.onrender.com/criar/turma
+Content-Type: application/json
+
+{
+
+"nome": "teste3", 
+"modulo": 2
+}
+
+### Mudar Módulo da Turma
+PUT https://labenu-system4.onrender.com/turmas
+Content-Type: application/json
+
+{
+"id" : "002",
+"modulo": 4
+}
+
+//-------------------- Endpoints Estudantes
+
+### Buscar por nome o Estudante
+GET https://labenu-system4.onrender.com/estudante?nome=santiago
+
+
+### Buscar todos os Estudantes
+GET https://labenu-system4.onrender.com/all/estudante
+
+### Criar Estudante 
+POST https://labenu-system4.onrender.com/criar/estudante
+Content-Type: application/json
+
+{
+"nome": "Patrick08", 
+"email": "patrick08@gmail.com", 
+"data_nasc": "1994-07-10", 
+"turma_id": "001"
+}
+
+### Mudar Estudante de turma  
+PUT https://labenu-system4.onrender.com/estudante
+Content-Type: application/json
+
+{
+"id" : "001",
+"turma_id" : "002"
+}
+
+//-------------------- Endpoints Docentes
+
+### Buscar todos os Docentes 
+GET https://labenu-system4.onrender.com/all/docentes
+
+### Criar Docente 
+POST https://labenu-system4.onrender.com/criar/docente 
+Content-Type: application/json
+
+{
+"nome": "teste", 
+"email": "teste@gmail.com", 
+"data_nasc": "1999-02-10"
+}
+
+### Mudar docente de turma 
+PUT https://labenu-system4.onrender.com/docentes
+Content-Type: application/json
+
+{
+"id" : "001",
+"turma_id" : "002"
+}
